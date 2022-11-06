@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=Roboto:ital,wght@0,300;0,900;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Thư viện mouse cursor effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.15/paper-core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <link href="css/serialcursor.css" rel="stylesheet" type="text/css" />
+    <script src="js/serialcursor.js"></script>
+
+    <!--Thư viện wow: https://wowjs.uk/docs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Thư viện animation: https://animate.style/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="js/style1.js"></script>
+    <script src="Js/aboutus.js"></script>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/service.css" />
+    <link rel="stylesheet" href="css/respon.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="s-search-1">
+            <div class="s_subsearch">
+                <img src="img/banner_home/Fitness _ more.png" alt="" class="s_logo_2" />
+                <div class="sub_search_1">
+                    <input type="text" placeholder="Search ...." value="" />
+                    <i class="fa-solid fa-magnifying-glass" id="s_searchinput"></i>
+                </div>
+                <div class="s_close"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+        </div>
+        <div class="container-fluid" id="s-nav-1">
+            <div class="s-flex">
+                <div class="s_logo_1">
+                    <a href="index.html"><img src="img/banner_home/Fitness _ more.png" alt="" /></a>
+                    <p>GYM SHARK</p>
+                </div>
+                <ul class="s_menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="calculator.html">BMI</a></li>
+                    <li><a href="trainer.html">TRAINER</a></li>
+                    <li><a href="class.html">CLASS</a></li>
+                    <li><a href="blog-list.html">BLOG</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                </ul>
+                <div class="s_social_1">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-magnifying-glass" id="s_active"></i>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn-2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><span>GET A FREE
+                        PASS</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="s_banner_1">
+        <div class="img-ratio--25">
+            <!-- <img src="img/service/service1.jpg" alt="" class="img-ratio" /> -->
+        </div>
+        <div class="s-text-banner1">
+            <div class="row">
+                <div class="col-xl-6">
+                    <p class="s_tittle">DISCOVER GYM SHARK</p>
+                    <p class="sub_tittle">
+                        With high-class services, meeting all 5-star fitness and health care needs of the elite, join
+                        SHARK Centuryon Membership
+                    </p>
+                </div>
+                <div class="col-xl-6"><img src="img/service/card-2.png" alt="" /></div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Infor User</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <label for="fname">Name</label><br />
+                            <input type="text" id="fname" name="fname" value="Name" /><br />
+                            <label for="lname">Address</label><br />
+                            <input type="text" id="lname" name="lname" value="Address" /><br />
+                            <label for="lphone">Phone Number</label><br />
+                            <input type="number" id="lphone" name="lphone" value="" /><br /><br />
+                            <input type="submit" value="Submit" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header  -->
+    <!-- card gold  -->
+    <div class="s-card-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <h3 class="s_tittle">
+                        <span class="sub">GOLD CARD</span><br />
+                        holders' EXCLUSIVE
+                    </h3>
+                    <p>What benefits will you get as a Gold Member at SHARK Fitness & Yoga?</p>
+                </div>
+                <div class="col-xl-3">
+                    <div class="s-item">
+                        <img src="img/feature1_home.jpg" alt="" />
+                        <h5>Convenience and privacy</h5>
+                        <p>Workout on all days - All time frames</p>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="s-item">
+                        <img src="img/feature3_trainer.jpg" alt="" />
+                        <h5>Lifestyle deals</h5>
+                        <p>Opportunity to receive Offers from California partners Free 2 trial sessions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end card gold  -->
+    <!-- card mars  -->
+    <div class="s-card-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <h3 class="s_tittle"><span class="sub-1">MARS.CARD'S</span> EXCLUSIVE</h3>
+                    <p>What benefits will you get as a Gold Member at SHARK Fitness & Yoga?</p>
+                </div>
+                <div class="col-xl-3">
+                    <div class="s-item">
+                        <img src="img/local_home1.jpg" alt="" />
+                        <h5>Convenience and privacy</h5>
+                        <p>Workout on all days - All time frames Practice at all North/Central/South clubs</p>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="s-item">
+                        <img src="img/feature2_home.jpg" alt="" />
+                        <h5>Privilege happy lifestyle</h5>
+                        <p>Opportunity to receive Offers from "SHARK" partners Free 2 practice sessions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end mars card  -->
+    <!-- iconic card  -->
+    <div class="s-card-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <h3 class="s_tittle"><span class="sub-2">ICONIC CARD</span> <br />EXCLUSIVE holders</h3>
+                    <p>
+                        Enjoy valuable privileges by becoming an ICONIC member. In addition, the accompanying person
+                        also has his/her own card,
+                        which is not required to accompany the main card and many other benefits. Please contact the
+                        nearest "SHARK" & Yoga Club
+                        for detailed advice.
+                    </p>
+                </div>
+                <div class="col-xl-3">
+                    <div class="s-item">
+                        <img src="img/blog2_home.jpg" alt="" />
+                        <h5>Convenience and privacy</h5>
+                        <p>Workout at all clubs Workout on all days - All time frames Benefits equal to Lotus card class
+                            at Yoga Plus system</p>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="s-item">
+                        <img src="img/yoga5.jpg" alt="" />
+                        <h5>EXCLUSIVE HAPPY LIFE STYLE</h5>
+                        <p>
+                            Accor Plus Travel Membership Card Exclusive vacation for VIP members (paid event)
+                            Opportunity to expand relationships
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end iconic card  -->
+    <!-- begin footer -->
+    <div class="s-footer-1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4" id="s_brand">
+                    <img src="img/banner_home/Fitness _ more.png" alt="" />
+                    <p>GYM SHARK</p>
+                    <p class="s_text">
+                        There are many variations of passages of lorem ipsum available, but the majority have suffered
+                        alteration in some form by
+                        injected.
+                    </p>
+                </div>
+                <div class="col-xl-2" id="s_info">
+                    <h3>INFORMATION</h3>
+                    <ul>
+                        <li><a href="aboutus.html"><i class="fa-solid fa-arrow-right-long"></i>ABOUT US</a></li>
+                        <li><a href=""><i class="fa-solid fa-arrow-right-long"></i>CLIENT</a></li>
+                        <li><a href="trainer.html"><i class="fa-solid fa-arrow-right-long"></i>TRAINER</a></li>
+                        <li><a href="blog-list.html"><i class="fa-solid fa-arrow-right-long"></i>BLOG</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-2" id="s_services">
+                    <h3>OUR SERVICES</h3>
+                    <ul>
+                        <li><a href="service.html"><i class="fa-solid fa-arrow-right-long"></i>SERVICE</a></li>
+                        <li><a href="calculator.html"><i class="fa-solid fa-arrow-right-long"></i>BMI</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-4" id="s_subscribe">
+                    <h3>SUBSCRIBE</h3>
+                    <form action="">
+                        <input type="text" placeholder="Email address..." id="footer" name="footer" />
+                        <label for="footer">SUBSCRIBE</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="s-subfooter-1">
+                <div class="row">
+                    <div class="col-xl-3">
+                        <div class="s_copyright">
+                            <p>Copyright © 2022 All Rights</p>
+                            <span>DESIGN BY | SANG NGUYEN</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="s_phonenumber">
+                            <p>+84 113 114 115</p>
+                            <span>info@example.com.</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="s_local">
+                            <p>51 Somestreet Cambridge,</p>
+                            <span>CB4 3AA, United Kingdom</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="s_social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-flickr"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="ft-backtop"><i class="fa fa-angle-up"></i></a>
+
+    </div>
+    <!-- end footer  -->
+</body>
+
+</html>

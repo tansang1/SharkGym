@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=Roboto:ital,wght@0,300;0,900;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Thư viện mouse cursor effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.15/paper-core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <link href="css/serialcursor.css" rel="stylesheet" type="text/css" />
+    <script src="js/serialcursor.js"></script>
+
+    <!--Thư viện wow: https://wowjs.uk/docs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Thư viện animation: https://animate.style/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="js/style1.js"></script>
+    <script src="Js/aboutus.js"></script>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/respon.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="s-search-1">
+            <div class="s_subsearch">
+                <img src="img/banner_home/Fitness _ more.png" alt="" class="s_logo_2" />
+                <div class="sub_search_1">
+                    <input type="text" placeholder="Search ...." value="" />
+                    <i class="fa-solid fa-magnifying-glass" id="s_searchinput"></i>
+                </div>
+                <div class="s_close"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+        </div>
+        <div class="container-fluid" id="s-nav-1">
+            <div class="s-flex">
+                <div class="s_logo_1">
+                    <a href="index.html"><img src="img/banner_home/Fitness _ more.png" alt="" /></a>
+                    <p>GYM SHARK</p>
+                </div>
+                <ul class="s_menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="calculator.html">BMI</a></li>
+                    <li><a href="trainer.html">TRAINER</a></li>
+                    <li><a href="class.html">CLASS</a></li>
+                    <li><a href="blog-list.html">BLOG</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                </ul>
+                <div class="s_social_1">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-magnifying-glass" id="s_active"></i>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn-2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><span>GET A FREE
+                        PASS</span></a>
+                <!-- click respon -->
+                <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" data-bs-target="#demo" id="s_demo"></i>
+                <!-- click respon -->
+            </div>
+        </div>
+    </div>
+    <!-- menu respon -->
+    <div class="offcanvas offcanvas-start" id="demo">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">MENU</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body s_table">
+            <ul class="s_menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="calculator.html">BMI</a></li>
+                <li><a href="trainer.html">TRAINER</a></li>
+                <li><a href="class.html">CLASS</a></li>
+                <li><a href="blog-list.html">BLOG</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- menu respon -->
+    <div class="s_banner_1">
+        <div class="img-ratio--48">
+            <div class="s_anima">
+                <img src="img/banner_home/item.png" alt="" class="s_right">
+                <img src="img/banner_home/item1.png" alt="" class="s_left">
+            </div>
+            <img src="img/banner_home/banner.jpg" alt="" class="img-ratio" />
+        </div>
+        <div class="s-text-banner1">
+            <div class="wow animate__animated animate__backInDown" data-wow-duration="1s" data-wow-delay="1s">
+                <p class="s_tittle">GROW YOUR</p>
+            </div>
+            <div class="wow animate__animated animate__backInLeft" data-wow-duration="2s" data-wow-delay="2s">
+                <p class="sub_tittle">STRENGTH</p>
+            </div>
+            <div class="wow animate__animated animate__backInRight" data-wow-duration="1.5s" data-wow-delay="1.5s">
+                <p class="s_action"><i class="fa-solid fa-chevron-right"></i>DISCOVER MORE</p>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Infor User</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <label for="fname">Name</label><br />
+                            <input type="text" id="fname" name="fname" value="Name" /><br />
+                            <label for="lname">Address</label><br />
+                            <input type="text" id="lname" name="lname" value="Address" /><br />
+                            <label for="lphone">Phone Number</label><br />
+                            <input type="number" id="lphone" name="lphone" value="" /><br /><br />
+                            <input type="submit" value="Submit" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="s-info">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="s_subimg">
+                        <img src="img/banner_home/sub_banner1.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="col-xl-8">
+                    <div class="s_subinfo">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <i class="fa-solid fa-location-dot"></i><span>142 Ham Tu , Ho Chi Minh</span><br />
+                                <i class="fa-solid fa-phone-flip"></i><span>+84 113 114 115</span>
+                            </div>
+                            <div class="col-xl-6"><i
+                                    class="fa-solid fa-envelope"></i><span>hanmactu@gmail.com</span><br /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header  -->
+    <!-- about us  -->
+    <div class="s-aboutus-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 wow animate__animated animate__fadeInLeft" data-wow-duration="1s"
+                    data-wow-delay="0.1s">
+                    <div class="s_introduce">
+                        <div class="s_who">KNOW ABOUT US</div>
+                        <h3 class="s_tittle">WHY CHOOSE US? BECAUSE WE'RE THE BEST.</h3>
+                        <p class="s_content">
+                            Our state of the art gyms provide you with a great place to work out in, whether you are
+                            there to burn off some
+                            calories or are training for something more specific. Why not visit your nearest Gym Center
+                            and take a look? We're
+                            here to help you!
+                        </p>
+                        <div class="s_detail">
+                            <i class="fa-solid fa-check"></i><span>Train with the best experts in bodybuilding
+                                field.</span>
+                        </div>
+                        <div class="s_detail">
+                            <i class="fa-solid fa-check"></i><span>Our personal trainers will help you find a perfect
+                                workout.</span>
+                        </div>
+                        <a href="aboutus.html"><button>READ MORE <i
+                                    class="fa-solid fa-arrow-right-long"></i></button></a>
+                    </div>
+                </div>
+                <div class="col-xl-6 wow animate__animated animate__fadeInRight" data-wow-duration="1s"
+                    data-wow-delay="0.1s">
+                    <div class="s_asset">
+                        <img src="img/banner_home/feature_class1.jpg" alt="" />
+                        <div class="caption">
+                            <h1>amazing caption!</h1>
+                            <p>Do Exercise! Now</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end about us  -->
+    <!-- feature class  -->
+    <div class="s-featureclass-1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4">
+                    <div class="s_child">
+                        <img src="img/trainer/trainer2.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="col-xl-8">
+                    <div class="s_nep">
+                        <div class="s_introduce">OUR CLASSES</div>
+                        <div class="s_tittle">
+                            <h3>OUR FEATURED CLASSES</h3>
+                        </div>
+                        <div id="s_slick">
+                            <div class="s_card">
+                                <div class="s_img">
+                                    <img src="img/banner_home/feature_class1.jpg" alt="" />
+                                </div>
+                                <h4>STRENGTH TRAINING</h4>
+                                <p>Improve your body strength with join our training</p>
+                                <a href="class.html"><span>READ MORE <i
+                                            class="fa-solid fa-arrow-right-long"></i></span></a>
+                            </div>
+
+                            <div class="s_card">
+                                <div class="s_img">
+                                    <img src="img/banner_home/feature_class2.jpg" alt="" />
+                                </div>
+                                <h4>BOXING</h4>
+                                <p>Improve your body strength with join our training and get shape</p>
+                                <a href="class.html"><span>READ MORE <i
+                                            class="fa-solid fa-arrow-right-long"></i></span></a>
+                            </div>
+
+                            <div class="s_card">
+                                <div class="s_img">
+                                    <img src="img/banner_home/feature_class3.jpg" alt="" />
+                                </div>
+                                <h4>CARDIO</h4>
+                                <p>Improve your body strength with join our training and get shape</p>
+                                <a href="class.html"><span>READ MORE <i
+                                            class="fa-solid fa-arrow-right-long"></i></span></a>
+                            </div>
+                            <div class="s_card">
+                                <div class="s_img">
+                                    <img src="img/banner_home/feature_class3.jpg" alt="" />
+                                </div>
+                                <h4>CARDIO</h4>
+                                <p>Improve your body strength with join our training and get shape</p>
+                                <a href="class.html"><span>READ MORE <i
+                                            class="fa-solid fa-arrow-right-long"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end feature class  -->
+    <!-- time table  -->
+    <div class="s-schedule-1">
+        <div class="container">
+            <div class="s-header-1">
+                <div class="s_introduce">CLASSES TIMETABLE</div>
+                <div class="s_tittle">WEEKLY CLASSES SCHEDULE</div>
+            </div>
+            <div class="s-table">
+                <table>
+                    <tr>
+                        <th>Person 1</th>
+                        <th>Person 2</th>
+                        <th>Person 3</th>
+                        <th>Person 1</th>
+                        <th>Person 2</th>
+                        <th>Person 3</th>
+                        <th>Person 1</th>
+                        <th>Person 2</th>
+                    </tr>
+                    <tr>
+                        <td>8:00 AM</td>
+                        <td>BOOTCAMP <span>Adrian Holmes</span></td>
+                        <td>SPINING <span>Adrian Holmes</span></td>
+                        <td></td>
+                        <td></td>
+                        <td>BOOTCAMP <span>RONALDO</span></td>
+                        <td></td>
+                        <td>BOOTCAMP <span>Adrian Holmes</span></td>
+                    </tr>
+                    <tr>
+                        <td>18:00 PM</td>
+                        <td>CROSSFIT <span>Adrian Holmes</span></td>
+                        <td>BOOTCAMP <span>MESSI</span></td>
+                        <td></td>
+                        <td></td>
+                        <td>TOTAL BODY <span>Adrian Holmes</span></td>
+                        <td></td>
+                        <td>BOOTCAMP <span>Adrian Holmes</span></td>
+                    </tr>
+                    <tr>
+                        <td>11:00 AM</td>
+                        <td>BOXING <span>MESSI</span></td>
+                        <td></td>
+                        <td>BOOTCAMP <span>Adrian Holmes</span></td>
+                        <td></td>
+                        <td>BOOTCAMP <span>KAKA</span></td>
+                        <td></td>
+                        <td>BOOTCAMP <span>Adrian Holmes</span></td>
+                    </tr>
+                    <tr>
+                        <td>15:00 PM</td>
+                        <td>BOXERCISE <span>ARNOLD</span></td>
+                        <td></td>
+                        <td>BOOTCAMP <span>Adrian Holmes</span></td>
+                        <td></td>
+                        <td></td>
+                        <td>BOOTCAMP <span>THE ROCK</span></td>
+                        <td>BOOTCAMP <span>Adrian Holmes</span></td>
+                    </tr>
+                    <tr>
+                        <td>8:00 AM</td>
+                        <td>BOOTCAMP <span>Adrian Holmes</span></td>
+                        <td>BOOTCAMP <span>J.CENA</span></td>
+                        <td></td>
+                        <td></td>
+                        <td>BOOTCAMP <span>Adrian Holmes</span></td>
+                        <td></td>
+                        <td>BOOTCAMP <span>Adrian Holmes</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- end time table  -->
+    <!-- feedback -->
+    <div class="s-feedback-1">
+        <div class="container">
+            <div id="s_slick_card">
+                <div class="s_card">
+                    <div class="s_info">
+                        <div class="row">
+                            <div class="col-xl-3"><img src="img/person1_trainer.jpg" alt="" /></div>
+                            <div class="col-xl-3"><span>VICTORIA</span><br />DIRECTOR</div>
+                            <div class="col-xl-6"></div>
+                        </div>
+                    </div>
+                    <div class="s_opinion">
+                        There are many variations of passages of lorem ipsum available, but the majority have
+                        suffered
+                        alteration in some form by
+                        injected.
+                    </div>
+                    <div class="s_rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="s_card">
+                    <div class="s_info">
+                        <div class="row">
+                            <div class="col-xl-3"><img src="img/person1_trainer.jpg" alt="" /></div>
+                            <div class="col-xl-3"><span>VICTORIA</span><br />DIRECTOR</div>
+                            <div class="col-xl-6"></div>
+                        </div>
+                    </div>
+                    <div class="s_opinion">
+                        There are many variations of passages of lorem ipsum available, but the majority have
+                        suffered
+                        alteration in some form by
+                        injected.
+                    </div>
+                    <div class="s_rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div class="s_card">
+                    <div class="s_info">
+                        <div class="row">
+                            <div class="col-xl-3"><img src="img/person1_trainer.jpg" alt="" /></div>
+                            <div class="col-xl-3"><span>VICTORIA</span><br />DIRECTOR</div>
+                            <div class="col-xl-6"></div>
+                        </div>
+                    </div>
+                    <div class="s_opinion">
+                        There are many variations of passages of lorem ipsum available, but the majority have
+                        suffered
+                        alteration in some form by
+                        injected.
+                    </div>
+                    <div class="s_rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end feedback  -->
+    <!-- trainer -->
+    <div class="s-trainer-1">
+        <div class="s_head_trainer">
+            <p class="s_introduce">OUR STRONGETS TEAM</p>
+            <h3 class="s_tittle">MEET EXPERT TRAINERS</h3>
+            <p class="s-detail">
+                Train with the best experts in bodybuilding field. Your results will speak. Try latest exercising
+                trends, innovative and
+                special Training plans.
+            </p>
+        </div>
+        <div class="row" id="s_card_trainer">
+            <div class="col-xl-4 wow animate__animated animate__fadeInLeft" data-wow-duration="1s"
+                data-wow-delay="0.1s">
+                <div class="s_info_trainer">
+                    <div class="s_name">DAVID SMITH</div>
+                    <div class="s_subject">BODYBUILDING COACH</div>
+                </div>
+                <div class="s_social">
+                    <a href="trainer.html"><img src="img/trainer/meet1.jpg" alt="" /></a>
+                    <ul>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-square-instagram"></i></li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-4 wow animate__animated animate__fadeInLeft" data-wow-duration="1s"
+                data-wow-delay="0.2s">
+                <div class="s_info_trainer">
+                    <div class="s_name">DAVID BECKHAM</div>
+                    <div class="s_subject">CARDIO COACH</div>
+                </div>
+                <div class="s_social">
+                    <a href="trainer.html"><img src="img/trainer/meet2.jpg" alt="" /></a>
+                    <ul>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-square-instagram"></i></li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-4 wow animate__animated animate__fadeInLeft" data-wow-duration="1s"
+                data-wow-delay="0.3s">
+                <div class="s_info_trainer">
+                    <div class="s_name">VICTORIA</div>
+                    <div class="s_subject">YOGA COACH</div>
+                </div>
+                <div class="s_social">
+                    <a href="trainer.html"><img src="img/trainer/meet3.jpg" alt="" /></a>
+                    <ul>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-square-instagram"></i></li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- end trainer  -->
+    <!-- begin client  -->
+    <div class="s-client-1">
+        <div class="container">
+            <div class="s_info_client">
+                <p class="s_introduce">OUR CLIENT</p>
+                <h3 class="s_tittle">A FEW OUR CLIENT</h3>
+            </div>
+            <div class="row" id="s_client_ani">
+                <div class="col-xl-3"><img src="img/client/client-01.png" alt="" /></div>
+                <div class="col-xl-3"><img src="img/client/client-02.png" alt="" /></div>
+                <div class="col-xl-3"><img src="img/client/client-03.png" alt="" /></div>
+                <div class="col-xl-3"><img src="img/client/client-04.png" alt="" /></div>
+                <div class="col-xl-3"><img src="img/client/client-05.png" alt="" /></div>
+                <div class="col-xl-3"><img src="img/client/client-06.png" alt="" /></div>
+                <div class="col-xl-3"><img src="img/client/client-07.png" alt="" /></div>
+                <div class="col-xl-3"><img src="img/client/client-08.png" alt="" /></div>
+            </div>
+        </div>
+    </div>
+    <!-- end client  -->
+    <!-- begin blog  -->
+    <div class="s-blog-1">
+        <div class="container">
+            <p class="s_introduce">LATEST BLOG POST</p>
+            <h3 class="s_tittle">SEE WHAT'S HAPPENING AROUND GYM</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="s_card">
+                        <div class="row">
+                            <div class="col-md-6"><img src="img/blog2_home.jpg" alt="" /></div>
+                            <div class="col-md-6">
+                                <div class="s_content">
+                                    <div class="info">
+                                        <span>BY ADMIN</span>
+                                        <span>13 JUN</span>
+                                    </div>
+                                    <h3>HOW TO KEEP YOUR BODY HEALTHY IN OVER THE FESTIVAL .</h3>
+                                    <div class="more">
+                                        <a href="blog-list.html">READ MORE <i
+                                                class="fa-solid fa-arrow-right-long"></i></a>
+                                        <span><i class="fa-regular fa-message"></i> 3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="s_card">
+                        <div class="row">
+                            <div class="col-md-6"><img src="img/blog1_home.jpg" alt="" /></div>
+                            <div class="col-md-6">
+                                <div class="s_content">
+                                    <div class="info">
+                                        <span>BY ADMIN</span>
+                                        <span>13 JUN</span>
+                                    </div>
+                                    <h3>HOW TO KEEP YOUR BODY HEALTHY IN OVER THE FESTIVAL .</h3>
+                                    <div class="more">
+                                        <a href="blog-list.html">READ MORE <i
+                                                class="fa-solid fa-arrow-right-long"></i></a>
+                                        <span><i class="fa-regular fa-message"></i> 3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="s_card">
+                        <div class="row">
+                            <div class="col-md-6"><img src="img/blog3_home.jpg" alt="" /></div>
+                            <div class="col-md-6">
+                                <div class="s_content">
+                                    <div class="info">
+                                        <span>BY ADMIN</span>
+                                        <span>13 JUN</span>
+                                    </div>
+                                    <h3>HOW TO KEEP YOUR BODY HEALTHY IN OVER THE FESTIVAL .</h3>
+                                    <div class="more">
+                                        <a href="blog-list.html">READ MORE <i
+                                                class="fa-solid fa-arrow-right-long"></i></a>
+                                        <span><i class="fa-regular fa-message"></i> 3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="s_card">
+                        <div class="row">
+                            <div class="col-md-6"><img src="img/blog4_home.jpg" alt="" /></div>
+                            <div class="col-md-6">
+                                <div class="s_content">
+                                    <div class="info">
+                                        <span>BY ADMIN</span>
+                                        <span>13 JUN</span>
+                                    </div>
+                                    <h3>HOW TO KEEP YOUR BODY HEALTHY IN OVER THE FESTIVAL .</h3>
+                                    <div class="more">
+                                        <a href="blog-list.html">READ MORE <i
+                                                class="fa-solid fa-arrow-right-long"></i></a>
+                                        <span><i class="fa-regular fa-message"></i> 3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end blog  -->
+    <!-- begin footer -->
+    <div class="s-footer-1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4" id="s_brand">
+                    <img src="img/banner_home/Fitness _ more.png" alt="" />
+                    <p>GYM SHARK</p>
+                    <p class="s_text">
+                        There are many variations of passages of lorem ipsum available, but the majority have suffered
+                        alteration in some form by
+                        injected.
+                    </p>
+                </div>
+                <div class="col-xl-2" id="s_info">
+                    <h3>INFORMATION</h3>
+                    <ul>
+                        <li><a href="aboutus.html"><i class="fa-solid fa-arrow-right-long"></i>ABOUT US</a></li>
+                        <li><a href=""><i class="fa-solid fa-arrow-right-long"></i>CLIENT</a></li>
+                        <li><a href="trainer.html"><i class="fa-solid fa-arrow-right-long"></i>TRAINER</a></li>
+                        <li><a href="blog-list.html"><i class="fa-solid fa-arrow-right-long"></i>BLOG</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-2" id="s_services">
+                    <h3>OUR SERVICES</h3>
+                    <ul>
+                        <li><a href="service.html"><i class="fa-solid fa-arrow-right-long"></i>SERVICE</a></li>
+                        <li><a href="calculator.html"><i class="fa-solid fa-arrow-right-long"></i>BMI</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-4" id="s_subscribe">
+                    <h3>SUBSCRIBE</h3>
+                    <form action="">
+                        <input type="text" placeholder="Email address..." id="footer" name="footer" />
+                        <label for="footer">SUBSCRIBE</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="s-subfooter-1">
+                <div class="row">
+                    <div class="col-xl-3">
+                        <div class="s_copyright">
+                            <p>Copyright © 2022 All Rights</p>
+                            <span>DESIGN BY | SANG NGUYEN</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="s_phonenumber">
+                            <p>+84 113 114 115</p>
+                            <span>info@example.com.</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="s_local">
+                            <p>51 Somestreet Cambridge,</p>
+                            <span>CB4 3AA, United Kingdom</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="s_social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-flickr"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="ft-backtop"><i class="fa fa-angle-up"></i></a>
+
+    </div>
+    <!-- end footer  -->
+</body>
+
+</html>

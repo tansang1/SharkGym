@@ -1,0 +1,112 @@
+
+/* serach header  */
+
+.s_banner_1 {
+    position: relative;
+}
+.s_banner_1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 50%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.s_banner_1 .s-text-banner1 {
+    position: absolute;
+    z-index: 2;
+    top: 55%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+.s_banner_1 .s-text-banner1 .s_tittle {
+    color: #1face1;
+    font-size: 20px;
+    font-weight: 700;
+}
+.s_banner_1 {
+    position: relative;
+}
+.s_banner_1 .s-text-banner1 .sub_tittle {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+.modal-header h1 {
+    font-weight: 800;
+    color: white;
+}
+.modal-header .btn-close {
+    background-color: white;
+}
+.modal-body input {
+    width: 400px;
+    padding: 10px 5px;
+}
+.modal-body label {
+    color: white;
+    margin: 10px 0;
+}
+.modal-content {
+    background-color: #222d35;
+}
+.modal-body input:last-child {
+    width: 100px;
+    background-color: #1face1;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+/* end header  */
+/* begin blog  */
+.s-blog-1{
+    margin: 30px 0;
+}
+.s_item{
+    margin: 10px 0;
+}
+.s-blog-1 .s_card .s_detail .s_info{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    color:#1face1;
+    font-weight: 800;
+    padding: 0 10px;
+}
+.s-blog-1 .s_card .s_detail h3{
+    color: #222d35;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+.s-blog-1 .s_card .s_detail a{
+    color: #222d35;
+    font-weight: 800;
+    width: 120px;
+    padding: 10px;
+    transition: 0.5s;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+.s-blog-1 .s_card .s_detail a:hover{
+    background-color: #1face1;
+    color: white;
+    width: 130px;
+}
+.s-blog-1 .s_card .s_detail i{
+    position: absolute;
+    left: -100px;
+    top: 14px;
+    transition: 0.5s;
+}
+.s-blog-1 .s_card .s_detail a:hover i{
+    left: 110px;
+}
+a{
+    cursor: pointer;
+}
+/* end blog  */
+

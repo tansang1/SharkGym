@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700;1,800&family=Roboto:ital,wght@0,300;0,900;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Thư viện mouse cursor effect -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.15/paper-core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+    <link href="css/serialcursor.css" rel="stylesheet" type="text/css" />
+    <script src="js/serialcursor.js"></script>
+
+    <!--Thư viện wow: https://wowjs.uk/docs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Thư viện animation: https://animate.style/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="js/style1.js"></script>
+    <script src="Js/aboutus.js"></script>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/blog.css" />
+    <link rel="stylesheet" href="css/respon.css" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="s-search-1">
+            <div class="s_subsearch">
+                <img src="img/banner_home/Fitness _ more.png" alt="" class="s_logo_2" />
+                <div class="sub_search_1">
+                    <input type="text" placeholder="Search ...." value="" />
+                    <i class="fa-solid fa-magnifying-glass" id="s_searchinput"></i>
+                </div>
+                <div class="s_close"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+        </div>
+        <div class="container-fluid" id="s-nav-1">
+            <div class="s-flex">
+                <div class="s_logo_1">
+                    <a href="index.html"><img src="img/banner_home/Fitness _ more.png" alt="" /></a>
+                    <p>GYM SHARK</p>
+                </div>
+                <ul class="s_menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="calculator.html">BMI</a></li>
+                    <li><a href="trainer.html">TRAINER</a></li>
+                    <li><a href="class.html">CLASS</a></li>
+                    <li><a href="blog-list.html">BLOG</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                </ul>
+                <div class="s_social_1">
+                    <ul>
+                        <li>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-magnifying-glass" id="s_active"></i>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn-2" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><span>GET A FREE
+                        PASS</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="s_banner_1">
+        <div class="img-ratio--25">
+            <img src="img/class/banner.jpg" alt="" class="img-ratio" />
+        </div>
+        <div class="s-text-banner1">
+            <p class="s_tittle">BLOG</p>
+            <p class="sub_tittle">How to keep your body healthy !</p>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Infor User</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <label for="fname">Name</label><br />
+                            <input type="text" id="fname" name="fname" value="Name" /><br />
+                            <label for="lname">Address</label><br />
+                            <input type="text" id="lname" name="lname" value="Address" /><br />
+                            <label for="lphone">Phone Number</label><br />
+                            <input type="number" id="lphone" name="lphone" value="" /><br /><br />
+                            <input type="submit" value="Submit" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header  -->
+    <div class="s-blog-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8">
+                    <div class="s_thump">
+                        <img src="img/blog/blog1.jpg" alt="" />
+                        <div class="s_info">BY ADMIN | JUNE 13, 2019 | FAT LOSS | 3 COMMENTS</div>
+                        <h3 class="s_tittle">How to Keep Your Body Healthy !</h3>
+                        <div class="s_content">
+                            Our gyms are designed and maintained to the highest standards, with state-of-the-art
+                            equipment. Lorem ipsum dolor sit
+                            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </div>
+                        <div class="s_quote">
+                            <i class="fa-solid fa-quote-left"></i> Cum sociis Theme natoque penatibus et magnis dis
+                            parturient montes, nascetur
+                            ridiculus mus.
+                        </div>
+                        <div class="s_content">
+                            Quisque mattis, ligula id sodales ullamcorper, urna sem placerat lacus, id laoreet lectus
+                            sapien quis nisl. Phasellus
+                            eu massa id leo consectetur vehicula. Donec quis finibus lacus, id accumsan magna. Etiam
+                            ullamcorper id quam vitae
+                            iaculis.
+                        </div>
+                        <div class="row s-blog-2">
+                            <div class="col-xl-6">
+                                <div class="s_subcontent">
+                                    <div class="s_tittle_1">READY FOR PERFECT FITNESS</div>
+                                    <div class="s_content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et
+                                        dolore magna aliqua.
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa-solid fa-check"></i>Train with the best experts in bodybuilding
+                                            field.</li>
+                                        <li><i class="fa-solid fa-check"></i>Our personal trainers will help you find a
+                                            perfect.</li>
+                                        <li><i class="fa-solid fa-check"></i>Trainers will build your perfect cardio
+                                            workout.</li>
+                                        <li><i class="fa-solid fa-check"></i>Proin gravida nibh vel velit auctor
+                                            aliquet.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <img src="img/blog/project-02.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="s_tittle_1">EATING HABIT FOR BEST PERFORMANCE</div>
+                        <div class="s_content_1">
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its
+                            layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                            letters, as opposed to
+                            using ‘Content here, content here’, making it look like readable English. Many desktop
+                            publishing packages and web
+                            page editors Sed eleifend ligula vitae ligula euismod porta. Donec in accumsan tellus.
+                        </div>
+                        <div class="s_comment">
+                            <div class="row s_comment1">
+                                <div class="col-xl-3"><img src="img/banner_home/Fitness _ more.png" alt="" /></div>
+                                <div class="col-xl-9">
+                                    <div class="s_tittle">Author: admin</div>
+                                    <div class="s_content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et
+                                        dolore magna aliqua. Ut enim ad minim veniam. View all posts by admin
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- part comment  -->
+                            <div class="s_tittle_1">3 REPLIES TO “HOW TO KEEP YOUR BODY HEALTHY”</div>
+                            <div class="row s_comment1">
+                                <div class="col-xl-3"><img src="img/blog/person1.png" alt="" /></div>
+                                <div class="col-xl-9">
+                                    <div class="s_tittle">JOHN DOE</div>
+                                    <p>November 20, 2019 at 5:28 am</p>
+                                    <div class="s_content">
+                                        Vivamus gravida felis et nibh tristique viverra. Sed vel tortor id ex accumsan
+                                        lacinia. Interdum et
+                                        malesuada fames ac ante ipsum primis in faucibus.
+                                    </div>
+                                    <button>REPLY</button>
+                                </div>
+                            </div>
+                            <div class="row s_comment1">
+                                <div class="col-xl-3"><img src="img/blog/person2.png" alt="" /></div>
+                                <div class="col-xl-9">
+                                    <div class="s_tittle">VICTORIA</div>
+                                    <p>November 20, 2019 at 5:28 am</p>
+                                    <div class="s_content">
+                                        Sed maximus imperdiet ipsum, id scelerisque nisi tincidunt vitae. In lobortis
+                                        neque nec dolor vehicula,
+                                        eget vulputate ligula lobortis.
+                                    </div>
+                                    <button>REPLY</button>
+                                </div>
+                            </div>
+                            <div class="row s_comment1">
+                                <div class="col-xl-3"><img src="img/blog/person1.png" alt="" /></div>
+                                <div class="col-xl-9">
+                                    <div class="s_tittle">NEYMAR</div>
+                                    <p>November 20, 2019 at 5:28 am</p>
+                                    <div class="s_content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et
+                                        dolore magna aliqua. Ut enim ad minim veniam. View all posts by admin
+                                    </div>
+                                    <button>REPLY</button>
+                                </div>
+                            </div>
+                            <textarea id="comment" placeholder="Comment" name="comment" cols="110" rows="8"
+                                aria-required="true"></textarea>
+                            <form action="">
+                                <input type="text" placeholder="Name (required)" /><br />
+                                <input type="text" placeholder="Email (required)" /><br />
+                                <input type="text" placeholder="Website" /><br />
+                                <input type="checkbox" id="vehicle1" name="vehicle1" />
+                                <label for="vehicle1">Save my name, email, and website in this browser for the next time
+                                    I comment.</label><br />
+                                <button class="s_post">POST COMMENT</button>
+                            </form>
+                            <!-- part comment  -->
+                        </div>
+                    </div>
+                </div>
+                <!-- categories  -->
+                <div class="col-xl-4">
+                    <div class="s-categories-1">
+                        <div class="s_tittle_2">CATEGORIES</div>
+                        <div class="s_detail">
+                            <div class="row">
+                                <div class="col-xl-10">
+                                    <ul class="s_number1">
+                                        <li>
+                                            <div><i class="fa-regular fa-folder-closed"></i>CARDIO</div>
+                                            <div>1</div>
+                                        </li>
+                                        <li>
+                                            <div><i class="fa-regular fa-folder-closed"></i>BOXING</div>
+                                            <div>1</div>
+                                        </li>
+                                        <li>
+                                            <div><i class="fa-regular fa-folder-closed"></i>BUILDING</div>
+                                            <div>1</div>
+                                        </li>
+                                        <li>
+                                            <div><i class="fa-regular fa-folder-closed"></i>YOGA</div>
+                                            <div>1</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s_tittle_3">RECENT POSTS</div>
+                        <div class="row s_card">
+                            <div class="col-xl-5">
+                                <div class="s_thump"><img src="img/trainer1.jpg" alt="" /></div>
+                            </div>
+                            <div class="col-xl-7">
+                                <p class="s_day">JUNE 13, 2022</p>
+                                <h3 class="s_tittle">FITNESS IS NOT ABOUT BEING BETTER THAN SOMEONE ELSE</h3>
+                            </div>
+                        </div>
+                        <div class="row s_card">
+                            <div class="col-xl-5">
+                                <div class="s_thump"><img src="img/trainer/yoga1.png" alt="" /></div>
+                            </div>
+                            <div class="col-xl-7">
+                                <p class="s_day">JUNE 13, 2022</p>
+                                <h3 class="s_tittle">FITNESS IS NOT ABOUT BEING BETTER THAN SOMEONE ELSE</h3>
+                            </div>
+                        </div>
+                        <div class="row s_card">
+                            <div class="col-xl-5">
+                                <div class="s_thump"><img src="img/trainer/yoga3.jpg" alt="" /></div>
+                            </div>
+                            <div class="col-xl-7">
+                                <p class="s_day">JUNE 13, 2022</p>
+                                <h3 class="s_tittle">FITNESS IS NOT ABOUT BEING BETTER THAN SOMEONE ELSE</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end categories  -->
+            </div>
+        </div>
+    </div>
+    <!-- begin footer -->
+    <div class="s-footer-1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-4" id="s_brand">
+                    <img src="img/banner_home/Fitness _ more.png" alt="" />
+                    <p>GYM SHARK</p>
+                    <p class="s_text">
+                        There are many variations of passages of lorem ipsum available, but the majority have suffered
+                        alteration in some form by
+                        injected.
+                    </p>
+                </div>
+                <div class="col-xl-2" id="s_info">
+                    <h3>INFORMATION</h3>
+                    <ul>
+                        <li><a href="aboutus.html"><i class="fa-solid fa-arrow-right-long"></i>ABOUT US</a></li>
+                        <li><a href=""><i class="fa-solid fa-arrow-right-long"></i>CLIENT</a></li>
+                        <li><a href="trainer.html"><i class="fa-solid fa-arrow-right-long"></i>TRAINER</a></li>
+                        <li><a href="blog-list.html"><i class="fa-solid fa-arrow-right-long"></i>BLOG</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-2" id="s_services">
+                    <h3>OUR SERVICES</h3>
+                    <ul>
+                        <li><a href="service.html"><i class="fa-solid fa-arrow-right-long"></i>SERVICE</a></li>
+                        <li><a href="calculator.html"><i class="fa-solid fa-arrow-right-long"></i>BMI</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-4" id="s_subscribe">
+                    <h3>SUBSCRIBE</h3>
+                    <form action="">
+                        <input type="text" placeholder="Email address..." id="footer" name="footer" />
+                        <label for="footer">SUBSCRIBE</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="s-subfooter-1">
+                <div class="row">
+                    <div class="col-xl-3">
+                        <div class="s_copyright">
+                            <p>Copyright © 2022 All Rights</p>
+                            <span>DESIGN BY | SANG NGUYEN</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="s_phonenumber">
+                            <p>+84 113 114 115</p>
+                            <span>info@example.com.</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="s_local">
+                            <p>51 Somestreet Cambridge,</p>
+                            <span>CB4 3AA, United Kingdom</span>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="s_social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-flickr"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="ft-backtop"><i class="fa fa-angle-up"></i></a>
+
+    </div>
+    <!-- end footer  -->
+</body>
+
+</html>

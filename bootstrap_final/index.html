@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hướng dẫn bootstrap finnal</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- Thư viện slick: https://kenwheeler.github.io/slick/ -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" href="slick/slick.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!----------------------------------------------------------->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Thư viện mouse cursor effect -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.15/paper-core.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+        <link href="dist/jquery.serialcursor.css" rel="stylesheet" type="text/css" />
+        <script src="dist/jquery.serialcursor.js"></script>
+        <!----------------------------------------------------------->
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Slick slider -->
+        <div class="s-slide-1">
+            <div class="item">
+                <img src="images/slide_1.jpg" alt="" />
+                <div class="s_content">
+                    <p>We are Producing Natural Products</p>
+                    <h2>Agriculture.</h2>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/slide_2.jpg" alt="" />
+                <div class="s_content">
+                    <p>We are Producing Natural Products 1</p>
+                    <h2>Agriculture 2</h2>
+                </div>
+            </div>
+        </div>
+
+        <a href="" class="c-button-1"
+            ><span>Discover more <i class="fa-solid fa-right-long"></i></span
+        ></a>
+
+        <div class="s-move-1">
+            <img src="images/logo.png" alt="" />
+        </div>
+
+        <div class="mr">
+            <a href="" class="c-button-2">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+        </div>
+
+        <div class="mr">
+            <a href="" class="c-button-3">
+                <i class="fa-solid fa-play"></i>
+            </a>
+        </div>
+
+        <script>
+            /* Xem các option: https://kenwheeler.github.io/slick/ */
+            $(document).ready(function () {
+                $(".s-slide-1").slick({
+                    autoplay: true,
+                    fade: true,
+                    dots: true,
+                });
+
+                $("#serialcursor").serialcursor();
+            });
+        </script>
+    </body>
+</html>

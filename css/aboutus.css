@@ -1,0 +1,166 @@
+/* begin know about  */
+.s-know-1 {
+    margin-top: 50px;
+}
+.s-know-1 img {
+    width: 70%;
+    box-shadow: -20px -20px #1face1;
+    margin-left: 100px;
+}
+.s-know-1 .s-content .s-introduce {
+    color: #1face1;
+    font-weight: 800;
+}
+.s-know-1 .s-content .s-tittle {
+    font-size: 40px;
+    color: #222d35;
+    font-weight: 800;
+    margin: 20px 0;
+}
+.s-know-1 .s-content span {
+    display: block;
+    margin: 20px 0;
+}
+.s-know-1 .s-content i {
+    color: #1face1;
+    margin-right: 5px;
+}
+.s-know-1 .s-content button {
+    padding: 15px 10px;
+    width: 200px;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    background-color: #222d35;
+    font-size: 12px;
+    font-weight: 800;
+    transition: 0.5s;
+}
+.s_banner_1 .s-text-banner1 {
+    position: absolute;
+    z-index: 2;
+    top: 55%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    text-align:left;
+}
+.s_banner_1 .s-text-banner1 .s_tittle {
+    color: #1face1;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+.s_banner_1 {
+    position: relative;
+}
+.s_banner_1 .s-text-banner1 .sub_tittle {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+.s-know-1 .s-content button:hover {
+    background-color: #1face1;
+}
+
+/* about us 2  */
+.s-know-2 {
+    padding-top: 50px;
+}
+.s-know-2 .s_tittle {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #1face1;
+}
+.s-know-2 .s-tittle-1 {
+    /* text-align: center; */
+    color: #1face1;
+    font-weight: 800;
+    margin: 10px 0;
+}
+/* end about us 2  */
+/* end know about  */
+/* count up  */
+.wrapper {
+    padding: 35px;
+    background-color: #222d35;
+    color: #808080;
+    text-align: center;
+    width: 100%;
+    height: 30vh;
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=- */
+/* Column Grids */
+/*-=-=-=-=-=-=-=-=-=-=-=- */
+
+.col_half {
+    width: 49%;
+}
+.col_third {
+    width: 32%;
+}
+.col_fourth {
+    width: 23.5%;
+}
+.col_fifth {
+    width: 18.4%;
+}
+.col_sixth {
+    width: 15%;
+}
+.col_three_fourth {
+    width: 74.5%;
+}
+.col_twothird {
+    width: 66%;
+}
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth {
+    position: relative;
+    display: inline;
+    display: inline-block;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+.end {
+    margin-right: 0 !important;
+}
+/* Column Grids End */
+
+.wrapper {
+    position: relative;
+}
+.counter {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+.count-title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.count-text {
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.fa-2x {
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #4ad1e5;
+}
+
+/* end count up  */
