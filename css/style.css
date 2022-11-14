@@ -30,12 +30,6 @@
     width: 100px;
     margin: 10px 400px;
 }
-.header .s-search-1 input {
-    display: block;
-    padding: 10px 5px;
-    width: 900px;
-    position: relative;
-}
 /* serach header  */
 /* animation tool gym  */
 .s_banner_1 {
@@ -54,9 +48,6 @@
 }
 #s-nav-1 .s_menu li:hover a {
     color: #1face1;
-}
-#s-nav-1 .s_social_1 ul {
-    margin-bottom: 0;
 }
 #s-nav-1 .s_social_1 ul li i:hover {
     color: #1face1;
@@ -520,6 +511,8 @@ td {
     display: flex;
     justify-content: space-between;
     margin-top: 5px;
+    font-weight: 800;
+    color: #1face1;
 }
 .s-blog-1 .s_card .more a{
     color: #1e2930;
@@ -570,25 +563,6 @@ td {
     color: #434c53;
     padding: 15px;
     outline: none;
-}
-.s-footer-1 form label {
-    display: block;
-    color: white;
-    background-color: #1face1;
-    padding: 15px;
-    width: 120px;
-    font-size: 13px;
-    margin-top: 20px;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.s-footer-1 form label:hover {
-    transform: scale(0.99);
-    opacity: 0.8;
-}
-.s-footer-1 .container-fluid:first-child {
-    border-bottom: 1px solid #434c53;
 }
 .s-footer-1 .s-subfooter-1 {
     color: white;

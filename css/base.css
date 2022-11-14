@@ -161,7 +161,7 @@ img {
 }
 #s-nav-1 .s_logo_1 img {
     width: 50px;
-    margin-top: 5px;
+    margin-top: -5px;
 }
 #s-nav-1 ul.s_menu {
     margin: 0;

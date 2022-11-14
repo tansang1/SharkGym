@@ -42,7 +42,7 @@
 
 .s_banner_1 .s-text-banner1 {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 35%;
     transform: translate(-50%, -50%);
     text-align: left;
@@ -53,7 +53,7 @@
     color:#1face1;
     font-size: 20px;
     font-weight: 700;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 }
 .s_banner_1 .s-text-banner1 .sub_tittle{
     color: white;
