@@ -269,12 +269,12 @@
     .btn-2 span{
         font-size: 12px;
     }
-    .s_banner_1 .s-text-banner1{
-        top: 55%;
+    .s_banner_1 .s-text-banner1 {
+        top: 50%;
     }
     .s_banner_1 .s-text-banner1 .s_tittle {
         color: #1face1;
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 700;
         letter-spacing: 5px;
     }
@@ -380,46 +380,69 @@
     }
 }
 /* ------------------------------------------  */
-@media (max-width: 768px){
-    .s_banner_1 .s-text-banner1{
-        top: 60%;
+@media (max-width: 600px){
+    .header {
+        padding: 0px 0px;
     }
-    .s-blog-1 .s_card .info {
+    #s-nav-1 .s_social_1 ul li {
+        margin: 10px 15px;
+    }
+    #s-nav-1 .s_logo_1 img {
+        width: 30px;
         margin-top: 5px;
     }
-    .s-blog-1 .s_card h3 {
-        margin-top: 5px;
-        margin-bottom: 0;
+    .header #s-nav-1 .s_logo_1 p {
+        font-size: 12px;
     }
-    .s-blog-1 .s_card .info {
-        margin-top: 0px;
+    .btn-2 {
+        padding: 5px;
     }
-    .s_banner_1 .s-text-banner1 .s_tittle{
-        font-size: 15px;
+    .btn-2 span {
+        font-size: 10px;
+    }
+    .s_banner_1 .s-text-banner1 .s_tittle {
+        font-size: 18px;
     }
     .s_banner_1 .s-text-banner1 .sub_tittle {
-        font-size: 32px;
-        letter-spacing: 5px;
-        line-height: 20px;
-    }
-    .s_banner_1 .s_anima .s_left{
-        left: 28%;
+        font-size: 30px;
+        line-height: 10px;
     }
     .offcanvas-header {
         padding: 10px;
     }
-    #demo{
-        max-width: 25%;
-    } 
-     /* button  */
-     .btn-2:hover:after {
-        transform: translate(47%, -47px);
+    .offcanvas-title {
+        font-size: 18px;
     }
-    .btn-2:before {
-        right: -69px;
+    .offcanvas-header .btn-close {
+        font-size: 10px;
+    }
+    #demo .s_menu li a {
+        font-size: 12px;
+    }
+    .offcanvas-body {
+        padding: 0 10px;
+    }
+    .btn-2:hover:before {
+        transform: translate(-41%, 5px);
+    }
+    .btn-2:hover:after {
+        transform: translate(42%, -53px);
+    }
+    .btn-2:after {
+        border-left: 49px solid transparent;
+        border-top: 80px solid #1face1;
+    }
+    .header.active {
+        width: 100%;
+    }
+    .s-trainer-1 #s_card_trainer .s_social ul {
+       font-size: 12px;
+        padding: 0px 10px;
     }
 }
-@media (max-width: 415px){
+
+/* ---------------------------------------------------  */
+@media (max-width: 413px){
     .header {
         padding: 0;
     }

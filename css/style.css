@@ -132,6 +132,9 @@
     padding: 15px;
     margin-right: 10px;
 }
+.modal-header{
+    background-color: #3e4c57;
+}
 .modal-header h1 {
     font-weight: 800;
     color: white;
@@ -142,6 +145,11 @@
 .modal-body input {
     width: 400px;
     padding: 10px 5px;
+    background-color: #3e4c57;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: none;
 }
 .modal-body label {
     color: white;
@@ -151,7 +159,7 @@
     background-color: #222d35;
 }
 .modal-body input:last-child {
-    width: 100px;
+    width: 400px;
     background-color: #1face1;
     color: white;
     border: none;
