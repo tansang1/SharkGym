@@ -129,11 +129,8 @@
     #demo .s_menu li:hover a{
         color: #1face1;
     }
-    .s-feedback-1 .s_card .s_opinion{
-        margin-left: 27px;
-    }
-    .s-feedback-1 .s_card .s_rate{
-        margin-left: 27px;
+    .s-feedback-1{
+       display: none;
     }
     .slick-dots li button{
         margin: 10px 0px;
@@ -216,6 +213,12 @@
     #s-nav-1 .s_social_1{
         margin-right: 0;
     }
+    .s-table{
+        overflow: auto;
+    }
+    .s-schedule-1 table{
+        width: 1000px;
+    }
 }
 /* -----------------------------------------  */
 @media (max-width: 768px){
@@ -232,6 +235,9 @@
     .header .s-search-1 .s_subsearch #s_searchinput{
         right: 177px;
     }
+    .s-feedback-1{
+        display: none;
+     }
     .header .s-search-1 .s_subsearch .s_close {
         right: 190px;
         top: 4px;
@@ -334,6 +340,12 @@
     .s-schedule-1 .s_tittle{
         font-size: 24px;
     }
+    .s-table{
+        overflow: auto;
+    }
+    .s-schedule-1 table{
+        width: 1000px;
+    }
     .s-schedule-1 table, th{
         padding: 5px;
     }
@@ -381,6 +393,9 @@
 }
 /* ------------------------------------------  */
 @media (max-width: 600px){
+    .s-feedback-1{
+        display: none;
+     }
     .header {
         padding: 0px 0px;
     }
@@ -439,12 +454,27 @@
        font-size: 12px;
         padding: 0px 10px;
     }
+    .s-table{
+        overflow: auto;
+    }
+    .s-schedule-1 table{
+        width: 1000px;
+    }
 }
 
 /* ---------------------------------------------------  */
 @media (max-width: 413px){
+    .s-feedback-1{
+        display: none;
+     }
     .header {
         padding: 0;
+    }
+    .s-table{
+        overflow: auto;
+    }
+    .s-schedule-1 table{
+        width: 1000px;
     }
     #s-nav-1 .s_logo_1 img {
         width: 30px;
